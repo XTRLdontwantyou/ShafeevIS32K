@@ -1,5 +1,3 @@
-# ShafeevIS32K
-1
 '''mermaid
 flowchart TD
     subgraph React Application
