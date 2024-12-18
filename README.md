@@ -1,4 +1,4 @@
-'''mermaid
+```mermaid
 flowchart TD
     subgraph React Application
         direction TB
