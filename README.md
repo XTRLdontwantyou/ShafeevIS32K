@@ -3,16 +3,15 @@
 ```mermaid
 sequenceDiagram
     participant User
-    participant Client
+    participant Shop
     participant Server
-    User->>Client: Отправка запроса на авторизацию
-    Client->>Server: Запрос на авторизацию
-    Server-->>Client: Ответ с токеном
-    Client->>User: Отображение успешного входа
-    User->>Client: Запрос списка задач
-    Client->>Server: Запрос списка задач
-    Server-->>Client: Ответ со списком задач
-    Client->>User: Отображение списка задач
+    User->>Shop: Отправка запроса на авторизацию
+    Shop->>Server: Запрос на авторизацию
+    Server-->>Shop: Ответ
+    Shop->>User: Отображение успешного входа
+    Shop->>Server: Запрос 
+    Server-->>Shop: Ответ запроса
+    Shop->>User: Отображение запроса
 ```
 ```mermaid
 flowchart TD
