@@ -11,8 +11,7 @@ sequenceDiagram
     Client->>Server: Запрос списка задач
     Server-->>Client: Ответ со списком задач
     Client->>User: Отображение списка задач
-    
-#dff;dlasjf,asdmfdas,fmdsafl;kdsfjasdkfsaklmfaslk
+
 ```mermaid
 flowchart TD
     subgraph React Application
