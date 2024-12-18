@@ -10,4 +10,3 @@ flowchart TD
         Routing -->|Задача 2| Task2
         Routing -->|Задача 3| Task3
     end
-    '''
