@@ -55,7 +55,7 @@ sequenceDiagram
 xychart-beta
     title "Выручка SigmaShop за 2023 год"
     x-axis [jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec]
-    y-axis "Revenue (in $)" 0 --> 11000
+    y-axis " (in $)" 0 --> 11000
     bar [000, 6000, 7500, 8200, 9800, 1050, 0, 1220, 12000, 11500, 3500, 6000]
     line [000, 6000, 7500, 8200, 9500, 1050, 0, 1220,1200, 11500, 3500, 6000]
 ```
