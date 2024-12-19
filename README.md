@@ -101,7 +101,7 @@ xychart-beta
 ```
 
 
-Диаграмма компонентов 
+Ниже вы можете наблюдать диаграмму компонентов 
 ```mermaid
 flowchart TD
     subgraph Frontend
