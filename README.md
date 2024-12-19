@@ -49,9 +49,10 @@ sequenceDiagram
    ```
 
 
-на данной диаграмме я показал выручку в течении года ну это по нашим ожидаемым результатам
+На диаграмме показана выручка с момента открытия до конца 2023 год
 
-```mermaidxychart-beta
+```mermaid
+xychart-beta
     title "Выручка SigmaShop за 2023 год"
     x-axis [jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec]
     y-axis "Revenue (in $)" 0 --> 11000
