@@ -61,17 +61,29 @@ xychart-beta
 ```
 
 
-вот диаграмма компонентов из чего наши повара делают пиццы
-
+вот диаграмма компонентов 
 ```mermaid
-mindmap
-  root((trollpizza))
-    Origins
-      bacon
-      human meat
-       papaya
-        pineapples
-          
-    cobblestone
-      fish
+flowchart TD
+    subgraph Frontend
+        direction TB
+        WebInterface((Веб-интерфейс)) --> ClientLogic(Клиентская логика)
+    end
+
+    subgraph Backend
+        direction TB
+        ApplicationServer(Сервер приложений) --> Database(База данных)
+        ApplicationServer --> AuthenticationService(Сервис аутентификации)
+        ApplicationServer --> PaymentProcessingService(Сервис обработки платежей)
+        ApplicationServer --> WalletManagementService(Сервис управления кошельками)
+    end
+
+    subgraph Внешние сервисы
+        direction TB
+        PaymentGateway(Платёжная система)
+        CryptoExchanges(Криптовалютные биржи)
+    end
+
+    ClientLogic -.-> ApplicationServer
+    PaymentProcessingService -.-> PaymentGateway
+    WalletManagementService -.-> CryptoExchanges
 ```
